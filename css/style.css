@@ -1,0 +1,141 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+header{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.navbar .container-fluid{
+    display: flex;
+    align-items:center ;
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10vw ;
+}
+
+.logo{
+    height: 9vh;
+    margin: 0px 60px;
+}
+
+.navbar-text{
+    padding: 0;
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.navbar-toggler{
+    margin: 4vh 1.5vw;
+}
+
+.nav-item{
+    margin: 0 20px;
+}
+
+.nav-link-text{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.main{
+    background: linear-gradient(89.97deg, #BDD4FF 0.02%, #002366 99.98%);
+    height: 95%;
+} 
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: white;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control{
+    width: 400px;
+}
+
+.container-fluid .modal-title{
+    display: flex;
+    justify-content: center;
+}
+.modal h3{
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+ 
+}
+
+.modal h4{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.modal h4 button{
+    text-decoration: none;
+}
+
+
+footer{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1199px) { 
+    .navbar .container-fluid {justify-content: space-around;} 
+    .navbar-collapse{
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        margin: 0;
+        border-top: solid 1px;
+    }
+}
+
+@media screen and (max-width: 630px) { 
+    .navbar-text {display: none;}
+    .logo {margin: 16px 30px 28px 30px;}
+    footer div{font-size: 15px;}
+
+}

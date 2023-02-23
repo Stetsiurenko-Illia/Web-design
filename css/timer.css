@@ -1,0 +1,51 @@
+
+
+main h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: white;
+}
+
+.timer{
+    width: fit-content;
+    height: fit-content;
+    margin: 40px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.time{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    margin: 16px 0;
+    color: white;
+}
+
+.bnts-timer .btn{
+    margin: 0px 10px;
+}
+
+.timer input{
+    margin: 28px 0;
+}
+
+@media screen and (max-width: 450px)
+{ 
+    .timer{ width: 90vw;}
+    .timer input{width: 87vw;}
+    main h1{font-size: 36px;}
+}

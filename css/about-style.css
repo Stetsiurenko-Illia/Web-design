@@ -1,0 +1,12 @@
+p{
+    color: white;
+}
+
+img{
+    height: 150px;
+}
+
+@media screen and (max-width: 450px)
+{ 
+    p{height: 200px;}
+}

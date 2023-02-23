@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about-style.css">
+</head>
+<body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-xl ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> 
+            <img src="img/stopwatch.svg" class="logo" alt="logo">
+            <span class="navbar-text text-black">Time is money</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"><span class="nav-link-text">Timer</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  active" href="./about.html"><span class="nav-link-text">About us</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link singin" aria-current="page"  data-bs-toggle="modal" data-bs-target="#SingIn"><span class="nav-link-text">Sign In</span></a>
+                <a class="nav-link account" aria-current="page" href="./account.html"><span class="nav-link-text">Account</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <div class="modal fade" id="SingIn" tabindex="-1" aria-labelledby="ModalLabel1"  aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <div class="container-fluid">
+                  <h3 class="modal-title" id="ModalLabel1">Sing In</h3>
+                </div>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <a href="./account.html" type="button mb-4" class="btn btn-success">Sign In</a>
+                <!-- <button type="button mb-4" class="btn btn-success" href="./account.html" >Sing In</button>   -->
+                <h4>Don't have an account yet? <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#SingUp">Sign up</button></h4>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="SingUp" tabindex="-1" aria-labelledby="ModalLabel1"  aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <div class="container-fluid">
+                  <h3 class="modal-title" id="ModalLabel1">Registration</h3>
+                </div>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating mb-4">
+                  <input type="name" class="form-control" id="floatingInput" placeholder="FirstName">
+                  <label for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="name" class="form-control" id="floatingInput" placeholder="LastName">
+                  <label for="floatingInput">Last Name</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <a href="./account.html" type="button mb-4" class="btn btn-success">Sign Up</a>
+                <!-- <button type="button mb-4" class="btn btn-success">Sing Up</button>   -->
+                <h4>Are you already registered? <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#SingIn">Sign in</button></h4>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+
+      <main>
+        <div class="container">
+          <p>
+            У кожної команди є окремі задачі і одна спільна мета. 
+            Чим ефективніше йде робота над задачами — тим швидше команда наближається до мети і тим менше помилок робить на своєму шляху.
+            <br><br>
+            Відсутність обліку робочого часу і є основною причиною «кульгаючого» тайм-менеджменту усієї команди. 
+            Коли у керівника, project manager або клієнта немає розуміння «чому так довго» або «на що йде робочий час, якщо результату немає» — на допомогу приходить облік часу співробітника.
+            Зазвичай компанії ведуть облік часу за допомогою таймшиту і вказують час, витрачений на задачу, в кінці робочого тижня в Excel таблиці. 
+            Такий спосіб обліку часу — головний біль: дані неточні, люди забувають вносити дані або вносять дуже приблизно, зводити звіт незручно.
+            <br><br>
+            Для обліку часу співробітники можна використовувати наш тайм-трекер.
+          </p>
+          <img src="img/timer.png" class="logo-big" alt="logo">
+          <p class="lead fw-normal">Our timer will make you work.</p>
+          <a class="btn btn-outline-secondary" href="index.html">Try now</a>
+        </div>
+      </main>
+
+    <footer class="bg-dark text-white>">
+         <div class="container text-white">
+            © 2023 Made by Illia Stetsiurenko.
+            <a class="text-white" href="https://github.com/Stetsiurenko-Illia/Web-design">Github repository</a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

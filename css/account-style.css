@@ -1,0 +1,17 @@
+main img{
+    background-color: white;
+    border-radius: 100px;
+}
+
+table{
+    margin: 20px 0;
+}
+
+th,td{
+    padding: 5px 0;
+}
+
+main div button{
+    margin-top: 10vh;
+    width: 100px;
+}

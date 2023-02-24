@@ -41,11 +41,11 @@ main .img-btn p{
 @media screen and (max-width: 450px)
 { 
     main .container{
-        padding-top: 10vh;
+        padding-top: 12vh;
         justify-content: space-around;
     }
     .descr{
-        height: 270px;
+        height: 300px;
         overflow: scroll;
     }
     main .img-btn img{

@@ -136,4 +136,5 @@ footer{
     .navbar-text {display: none;}
     .logo {margin: auto 30px;}
     footer div{font-size: 15px;}
+    .modal input{width: 80vw;}
 }

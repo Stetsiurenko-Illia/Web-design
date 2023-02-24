@@ -8,9 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about-style.css">
 </head>
@@ -64,7 +64,6 @@
                   <label for="floatingPassword">Password</label>
                 </div>
                 <a href="./account.html" type="button mb-4" class="btn btn-success">Sign In</a>
-                <!-- <button type="button mb-4" class="btn btn-success" href="./account.html" >Sing In</button>   -->
                 <h4>Don't have an account yet? <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#SingUp">Sign up</button></h4>
               </div>
           </div>
@@ -105,23 +104,24 @@
         </div>
       </div>
   
-
       <main>
         <div class="container">
-          <p>
-            У кожної команди є окремі задачі і одна спільна мета. 
-            Чим ефективніше йде робота над задачами — тим швидше команда наближається до мети і тим менше помилок робить на своєму шляху.
+          <p class="descr">
+            Each team has separate tasks and one common goal.
+            The more efficiently the work on the tasks goes, the faster the team approaches the goal and the fewer mistakes it makes on its way.
             <br><br>
-            Відсутність обліку робочого часу і є основною причиною «кульгаючого» тайм-менеджменту усієї команди. 
-            Коли у керівника, project manager або клієнта немає розуміння «чому так довго» або «на що йде робочий час, якщо результату немає» — на допомогу приходить облік часу співробітника.
-            Зазвичай компанії ведуть облік часу за допомогою таймшиту і вказують час, витрачений на задачу, в кінці робочого тижня в Excel таблиці. 
-            Такий спосіб обліку часу — головний біль: дані неточні, люди забувають вносити дані або вносять дуже приблизно, зводити звіт незручно.
+            The lack of accounting for working hours is the main reason for the "lame" time management of the entire team.
+            When a manager, project manager or client does not understand "why it is taking so long" or "what is working time spent on, if there is no result" - employee time accounting comes to the rescue.
+            Usually, companies keep track of time using a time sheet and indicate the time spent on a task at the end of the working week in an Excel spreadsheet.
+            This method of time accounting is a headache: the data is inaccurate, people forget to enter data or enter it very roughly, it is inconvenient to compile a report.
             <br><br>
-            Для обліку часу співробітники можна використовувати наш тайм-трекер.
+            Employees can use our <a href="./index.html">time tracker</a> to track their time.
           </p>
-          <img src="img/timer.png" class="logo-big" alt="logo">
-          <p class="lead fw-normal">Our timer will make you work.</p>
-          <a class="btn btn-outline-secondary" href="index.html">Try now</a>
+          <div class="img-btn">
+            <img src="img/timer.png" class="logo-big" alt="logo">
+            <p> Our timer will make you work.</p>
+            <a class="btn btn-outline-warning" href="index.html">Try now</a>
+          </div>
         </div>
       </main>
 

@@ -1,12 +1,49 @@
-p{
-    color: white;
+main{
+    display: flex;
+}
+main .container{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-img{
+main .img-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-family: 'Mulish';
+    font-style: medium;
+    font-weight: 500;
+    color: white;
+    font-size: medium;
+}
+
+main img{
+    margin: 40px 0 10px 0;
     height: 150px;
 }
 
+main .img-btn p{
+    margin: 10px;
+}
+
+
 @media screen and (max-width: 450px)
 { 
-    p{height: 200px;}
+    main .container{
+        padding-top: 10vh;
+        justify-content: space-around;
+    }
+    .descr{
+        height: 300px;
+        overflow: scroll;
+    }
+    main .img-btn img{
+        margin-top: -50px;
+    }
 }

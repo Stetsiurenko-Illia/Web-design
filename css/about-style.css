@@ -23,13 +23,18 @@ p{
     font-size: medium;
 }
 
+p a{
+    color: yellow;
+    text-decoration: none;
+}
+
 main img{
     margin: 40px 0 10px 0;
     height: 150px;
 }
 
 main .img-btn p{
-    margin: 12px;
+    margin: 10px;
 }
 
 

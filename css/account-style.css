@@ -15,3 +15,33 @@ main div button{
     margin-top: 10vh;
     width: 100px;
 }
+
+@media screen and (max-height: 800px)
+{ 
+    main .container{
+        padding-top: 130px;
+        overflow: scroll;
+    }
+
+    main .container::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+    main .container::-webkit-scrollbar-thumb {
+        background-color: #a3c2fd;
+        border-radius: 10px;
+      }
+    
+    main .container::-webkit-scrollbar-corner{
+        visibility: hidden;
+      }
+
+    main div button{
+        margin-top: 10px;
+    }
+
+    table{
+        margin: 10px 0;
+    }
+    
+}

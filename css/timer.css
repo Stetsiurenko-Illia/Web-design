@@ -16,7 +16,7 @@ main h1{
     width: fit-content;
     height: fit-content;
     margin: 40px auto;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,13 +39,78 @@ main h1{
     margin: 0px 10px;
 }
 
+.bnts-timer i{
+    color: white;
+}
+
+.bnts-timer .btn-warning i{
+    margin: 0 2px;
+}
+
 .timer input{
     margin: 28px 0;
 }
 
+#listItem{
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    height: 25vh;
+    color: white;
+}
+ 
+  #listItem::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  #listItem::-webkit-scrollbar-thumb {
+    background-color: #a3c2fd;
+    border-radius: 10px;
+  }
+
+  #listItem::-webkit-scrollbar-corner{
+    visibility: hidden;
+  }
+
+  #listItem #close{
+    float:right;
+    background-color: transparent;
+    border: none;
+    margin-left: 30px;
+    padding: 0 ;
+  }
+
+  .close-icon{
+    /* width:25px;
+    height:25px; */
+    cursor: pointer;
+    color: black;   
+  }
+  
+  .close-icon:hover{
+    color: #a3c2fd;
+  }
+
+  .fake-btn{
+    display: none;
+  }
 @media screen and (max-width: 450px)
 { 
     .timer{ width: 90vw;}
     .timer input{width: 87vw;}
     main h1{font-size: 36px;}
+    #listItem #close{
+      margin-left: 15px;
+    }
+}
+
+@media screen and (max-height: 900px)
+{ 
+  #listItem{
+    height: 17vh;
+  }
+  .timer{
+    margin-bottom: 10px;
+  }
+
 }

@@ -48,6 +48,18 @@ main .img-btn p{
         height: 300px;
         overflow: scroll;
     }
+    .descr::-webkit-scrollbar {
+        width: 5px;
+      }
+      
+    .descr::-webkit-scrollbar-thumb {
+        background-color: #a3c2fd;
+        border-radius: 10px;
+      }
+    
+    .descr::-webkit-scrollbar-corner{
+        visibility: hidden;
+      }
     main .img-btn img{
         margin-top: -50px;
     }

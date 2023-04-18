@@ -1,6 +1,6 @@
 html,body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding:0;
     margin:0;
 }
@@ -99,6 +99,13 @@ header{
     align-items: center;
 }
 
+.modal #date{
+    height: 58px;
+}
+
+.modal #select{
+    height: 58px;
+}
 
 .modal h4 button{
     text-decoration: none;
@@ -114,7 +121,7 @@ main .container{
 }
 
 footer{
-    height: 5%;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,4 +144,27 @@ footer{
     .logo {margin: auto 30px;}
     footer div{font-size: 15px;}
     .modal input{width: 80vw;}
+}
+
+@media screen and (max-height: 800px)
+{ 
+    main .container{
+        padding-top: 130px;
+        overflow: scroll;
+        height: 95vh;
+    }
+
+    main .container::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+    main .container::-webkit-scrollbar-thumb {
+        background-color: #a3c2fd;
+        border-radius: 10px;
+      }
+    
+    main .container::-webkit-scrollbar-corner{
+        visibility: hidden;
+      }
+
 }

@@ -100,7 +100,11 @@ main h1{
     .timer input{width: 87vw;}
     main h1{font-size: 36px;}
     #listItem #close{
-      margin-left: 15px;
+      margin-left: 10px;
+      display: flex;
+    }
+    #listItem div{
+      font-size: small;
     }
 }
 

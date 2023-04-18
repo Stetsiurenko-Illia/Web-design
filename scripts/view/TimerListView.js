@@ -14,6 +14,6 @@ export default class TimerListView{
 
     createDivForListItems(){
         console.log("createDIvForListItems");
-        return '<div id="listItemsCenter" class="col-10 col-sm-10 col-md-8 col-lg-6 col-xl-5 center"></div>';
+        return '<div id="listItemsCenter" class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-5 center"></div>';
     }
 }
